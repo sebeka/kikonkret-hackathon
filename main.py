@@ -5,8 +5,8 @@ def hello_world(name):
 
 demo = gr.Interface(
     fn=hello_world,
-    inputs=gr.Textbox(label="Suchbegriff"),
-    outputs=gr.Textbox(label="Infos"),
+    inputs=gr.Textbox(label="Suchbegriff", lines=10),
+    outputs=gr.Textbox(label="Infos", lines=30),
     title="Uni Mannheim - IT-Anleitungen",
     description="Hier können Sie die IT-Anleitungen der Universität Mannheim durchsuchen. Bitte geben Sie einen Suchbegriff ein:",
 )
